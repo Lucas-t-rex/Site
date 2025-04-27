@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color:#011126 ;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+    
+}
+
+.cave {
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+.logo-centro {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.logo {
+    border-radius: 15px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.623);
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 30px;
+}
+
+li {
+    margin: 15px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+a {
+    color: #c7daf2;
+    text-decoration: none;
+    font-size: 1.1em;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+  
+  a::after {
+    content: "";
+    position: absolute;
+    left: -4px; /* ultrapassa mais a palavra */
+    right: -4px;
+    top: 50%;
+    height: 3px; /* faixa mais espessa */
+    background: red;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease;
+    z-index: 2; /* faixa na frente do texto */
+  }
+  
+  a:hover {
+    transform: scale(1.25); /* aumenta mais a palavra */
+  }
+  
+  a:hover::after {
+    transform: scaleX(1);
+  }
+
+.intro-section {
+    display: flex;
+    color: #c7daf2;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.514);
+}
+
+.intro-title {
+    margin-left: 90px;
+    margin-top: 9%;
+    margin-bottom: 10%;
+    font-size: 60px;
+    font-family: "Black Ops One", system-ui;
+    color: rgb(201, 21, 9);
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.514);
+    
+}
+
+.intro-text {
+    font-size: 30px;
+    margin-right: 5%;
+    margin-left: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-family: "Bebas Neue", sans-serif;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.514);
+}
+
+#lucas {
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Black Ops One", system-ui;
+    color: rgb(201, 21, 9);
+}
+
+h2 {
+    font-family: "Black Ops One", system-ui;
+    color: rgb(201, 21, 9);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.336);
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+p {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.about-me {
+    background-color: #c7daf2;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.336);
+}
+
+.text-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+}
+.foto {
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.336);
+}
+
+.skills {
+    background-color: #c7daf2;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.336);
+}
+
+.projects {
+    background-color: #c7daf2;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.336);
+}
+
+.contact {
+    background-color: #c7daf2;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.336);
+}
+
+
+footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color:#345074 ;
+    
+}
